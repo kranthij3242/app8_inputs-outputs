@@ -1,0 +1,4 @@
+<h2>This is Parent Component</h2>
+Enter Parent Value:<input type='text' #parent (keyup)="0"><br>
+Display Child Value:{{printchildvalue}}
+<app-basicinputsandoutputs [valuefromparent]="parent.value" (childeventvalue)=" printchildvalue=$event"></app-basicinputsandoutputs>
